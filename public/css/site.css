@@ -1,0 +1,12 @@
+#result{
+	font-size: 100px;
+	color:yellow;
+}
+#textarea{
+	height: 130px;
+	width: 300px;
+}
+#input{
+	width: 300px;
+	text-align: center;
+}

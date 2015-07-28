@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>My App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+</head>
+<body>
+	<!--..................................................-->
+	<div align="center">
+		<h1><u>FizzBuzz</u></h1>
+		<form class="container well" id="textarea"><p>RULES: Enter any number. If number is divisable by 3 it will display "Fizz"; If number is divisable by 5 it will display "Buzz"</p></form>
+		<div ng-controller="HomeController">
+			<input id="input" placeholder="ENTER ANY NUMBER..." ng-model="value">
+			<h1 id="result">{{translate(value)}}</h1>
+		</div>
+	</div>
+	<!--................................................-->
+
+	<ui-view></ui-view>
+	<!-- Ext Libs -->
+	<script src="angular/angular.min.js"></script>
+	<script src="angular-ui-router/release/angular-ui-router.min.js"></script>
+	<!-- Global Src -->
+	<script src="/javascript/app.js"></script>
+	<!-- Factories -->
+	<script src="/javascript/services/HomeFactory.js"></script>
+	<!-- Controllers -->
+	<script src="/javascript/controllers/HomeController.js"></script>
+</body>
+</html>
